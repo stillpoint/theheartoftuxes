@@ -1,0 +1,360 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+    
+      
+        <title>What am I doing wrong? - TheHeartofTuxes</title>
+      
+    
+    
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TheHeartofTuxes" class="md-header__button md-logo" aria-label="TheHeartofTuxes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheHeartofTuxes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What am I doing wrong?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TheHeartofTuxes" class="md-nav__button md-logo" aria-label="TheHeartofTuxes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    TheHeartofTuxes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../survival/" class="md-nav__link">
+        Survival
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meditation/" class="md-nav__link">
+        Meditation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../buddhism/" class="md-nav__link">
+        Buddhism
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../malefashionadvice/" class="md-nav__link">
+        malefashionadvice
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>What am I doing wrong?</h1>
+
+<p>&gt; <em>Why can't I focus my mind enough?</em></p>
+<p>Because your mind is cluttered with thoughts about your day, and so on. <em>And</em> you <em>attach</em> to those thoughts. At some level, you deem them important to hold and follow. Essentially, you decide that the thoughts — as useless as they may be — are more significant than your meditation and your experience of the moment.</p>
+<p>As Echkart Tolle says, "If you wanted peace, you would have it." You would choose peace over following those thoughts.</p>
+<p>Just like all of us, you have developed a very deep habit of trusting your thinking. Our societal conditioning and upbringing has implanted and strengthened the notion that we can control our situation by thinking about it. That is not true. We can control our situation by letting go of our thinking about it. It's just that you (and we all) don't trust what's left. The sitting, the breathing, the body sensations, the ticking of the clock or the hum of the street sounds... the rumbling of the stomach, the silence of the walls and floor: we think this momentary experience is not enough; we "think this can't be IT!"</p>
+<p>But that is exactly our practice: to be with the moment, as it is. Nothing makes us okay with life other than our practice of being okay with it. We have to strengthen our "okay", our mind-that-is-enough.</p>
+<p>So never mind about incredible experiences. No experience matters more or less than this moment. In fact, any experience other than this moment can't possibly help you, because it is not real.</p>
+<p>So you must determine very strongly to come back to the present moment. You must determine very strongly not to put stock in thoughts that arise, whether they are wonderful or terrible or boringly neutral. Those thoughts don't matter. The more frequently you practice letting go of them, the more you will see that they are not where your real life is. It's only because you've developed the deep habit of believing in your thought-world that you have difficulty living in your moment-world.</p>
+<p>Only be open-handed with the moment. That is enough. That is ten thousand times better than attaching to some incredible experience.</p>
+<p><strong>With that as the foundation of your approach to meditation, how can you do better at meditation?:</strong></p>
+<ul>
+<li>
+<p><strong>Know and recall <em>why</em> you meditate.</strong> This gives you the power to break through difficulty. If you are doing it for selfish reasons or in pursuit of gaining something for your own self-aggrandisement, you will experience disappointment. If on the other hand you keep a non-grasping and generous heart you will have lasting power — because you don't attach to results, results won't control your experience.</p>
+</li>
+<li>
+<p><strong>Prepare your environment.</strong> Make a space conducive to clarity. Keep it clean and orderly and spacious. Simple, beautiful, natural adornment like a flower or candle or bowl of water can remind you of your simple and natural mind, and can help bring that mind forth. As much as possible, remove distractions. Also avoid subtle associations with things that promote either sleepiness or thinking: don't meditate in pyjamas, for instance, but in simple and dignified clothing that supports your noble and awake character. Also clear away "thinking machines" like TV, computer, phone, books, and things that have words written on them.</p>
+</li>
+</ul>
+<p>At first, establishing a supportive environment is important. As your aspiration and concentration grow, you will be able to meditate in any setting, even the busiest city street.</p>
+<ul>
+<li><strong>Be very clear on the method you are practicing.</strong> Areas of doubt about the method allow you to compromise and fudge. One little indulgence in thinking becomes a stream, then a full-on river that sweeps you away. But if you have a clear method, even if (when!) the river of thought sweeps you away you will have something to return to. The moment you realize you've gone away in thinking, just let it go and return.</li>
+</ul>
+<p><strong>There's no need to force the mind to be quiet.</strong> Stop considering that as success. Your success is in returning to the moment, whatever it is, whether it includes thinking or not. Just return to the method. Every time you go away, simply and gently return. A hundred times... a million times... just return as if there's no problem. Then the strength of your returning will grow, and you will be able to return faster and with less drama. Eventually, because you have trained in ungrasping thought, you simply won't let it take you away any more. That's when the mind will settle in deep silence.</p>
+<ul>
+<li>
+<p>If you have difficulty with overthinking when you are doing silent sitting meditation, you can <strong>try using the body to help establish your presence.</strong> Using meditation beads or doing chanting or mantra might help, but especially, using the whole body in vigorous rhythmic activity can help the mind settle down tremendously. Bowing/prostration practice is recommended both as a daily part of spiritual practice and as an emergency method when the mind is too unsettled to simply sit in meditation.</p>
+</li>
+<li>
+<p><strong>Try meditating first thing in the morning</strong>, as soon as you awaken. Whatever moment you awaken (it doesn't depend on a clock time), rush to splash cold water on your face and immediately sit down to meditate. This can help you to experience your innate mind of stillness and peace. Then you can add evening meditation as a way of letting go of the day. Morning and evening practice may have different qualities, but the quality is not the main point; the main point is that you practice returning to the moment no matter what the moment is like.</p>
+</li>
+<li>
+<p>As soon as possible, <strong>seek out a good teacher and meditating friends or community</strong>. These are absolutely invaluable aids to your progress, as they can hold the form that you are not yet able to hold, and can provide the wisdom and perspective that you have not yet gained.</p>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

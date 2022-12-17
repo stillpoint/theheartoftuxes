@@ -1,0 +1,348 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+    
+      
+        <title>The Dunning-Kruger Effect - TheHeartofTuxes</title>
+      
+    
+    
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TheHeartofTuxes" class="md-header__button md-logo" aria-label="TheHeartofTuxes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheHeartofTuxes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Dunning-Kruger Effect
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TheHeartofTuxes" class="md-nav__button md-logo" aria-label="TheHeartofTuxes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    TheHeartofTuxes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../survival/" class="md-nav__link">
+        Survival
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meditation/" class="md-nav__link">
+        Meditation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../buddhism/" class="md-nav__link">
+        Buddhism
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../malefashionadvice/" class="md-nav__link">
+        malefashionadvice
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>The Dunning-Kruger Effect</h1>
+
+<p>Highly enlightened beings can tell. We can't necessarily tell. That is why lineages and systems of transmission and verification have appeared in many traditions. Teachers pass testing questions, demonstrate their attainment of <em>Bodhi</em> (the enlightened mind), unify with their master's enlightened mind, and are checked and certified by other enlightened masters. This system ensures the authenticity of the masters it produces as well as the continuation of the lineage.</p>
+<p>You as whether we must blindly trust. These are two different issues: blindness and trust. Don't assume that one necessitates the other. If you proceed blindly, you fail to live up the your responsibility for yourself and your progress. If you don't trust anything, you wallow in the hindrance of Doubt.</p>
+<p>You need to take the proper time and effort, do research, study with a teacher, test out the teachings, witness the presence and compassion demonstrated by the teacher, and so on. It is not a simple checklist but a process you are partly responsible for. It takes some time; you can't rush or take shortcuts.</p>
+<p>But once there is some good evidence that this is a good path, and once you have understood the steps of cause and effect the path entails, you need to let go of prideful skepticism and fearful doubt, and start using your faith — faith that you are essentially no different from the great beings who achieved enlightenment by following the same cause-and-effect steps.</p>
+<p>Proper faith means letting go of all views, for and against, and applying yourself to the study of the way things really are. You don't carry armament into the new moment; you don't keep opinions and arguments in your pocket. You meet the new moment naked, with the confidence that you are already enough, and that you don't need to play the game of accepting and rejecting concepts.</p>
+<p>~</p>
+<p>This very wonderful teaching on doubt is offered by Sogyal Rinpoche in <em>The Tibetan Book Of Living And Dying</em>:</p>
+<p>&gt;<em>Doubts demand from us a real skillfulness in dealing with them, and I notice how few people have any idea how to pursue doubts or to use them. It seems ironic that in a civilization that so worships the power of deflation and doubt, hardly anyone has the courage to deflate the claims of doubt itself—to do as one Hindu master said: turn the dogs of doubt on doubt itself, to unmask cynicism, and to uncover what fear, despair, hopelessness, and tired conditioning it springs from. Then doubt would no longer be an obstacle, but a door to realization, and whenever doubt appeared in the mind, a seeker would welcome it as a means of going deeper into the truth.</em></p>
+<p>~</p>
+<p>&gt;<em>Doubt is not a disease but merely a symptom of a lack of what we in our tradition call the View, which is the realization of the nature of mind, and so of the nature of reality. When the View is there completely, there will be no possibility for the slightest trace of doubt, for then we’ll be looking at reality through its own eyes. But until we reach enlightenment there will inevitably be doubts, because doubt is a fundamental activity of the unenlightened mind, and the only way to deal with doubts is neither to suppress nor indulge them.</em>
+&gt;
+&gt;<em>In ancient times, then, there were extraordinary masters and students... receptive and single-minded... could, by just practicing with unswerving devotion one single instruction, attain liberation. Even now, if we were to put our mind to one powerful wisdom method and work with it directly, there is a real possibility we would become enlightened.</em>
+&gt;
+&gt;<em>Our minds, however, are riddled and confused with doubt. I sometimes think that doubt is an even greater block to human evolution than desire and attachment. Our society promotes cleverness instead of wisdom, and celebrates the most superficial, harsh, and least useful aspects of our intelligence. We have become so falsely "sophisticated" and neurotic that we take doubt itself for truth, and the doubt that is nothing more than ego's desperate attempt to defend itself from wisdom is deified as the goal and fruit of true knowledge. This form of mean-spirited doubt is the shabby emperor of samsara, served by a flock of "experts" who teach us not the open-souled and generous doubt that Buddha assured us was necessary for testing and proving the worth of the teachings, but a destructive form of doubt that leaves us nothing to believe in, nothing to hope for, and nothing to live by.</em>
+&gt;
+&gt;<em>Our contemporary education, then, indoctrinates us in the glorification of doubt, has created in fact what could almost be called a religion or theology of doubt, in which to be seen to be intelligent we have to be seen to doubt everything, to always point to what's wrong and rarely to ask what's right or good, cynically to denigrate all inherited spiritual ideals and philosophies, or anything that is done in simple goodwill or
+with an innocent heart.</em>
+&gt; 
+&gt; <em>The Buddha summons us to a different kind of doubt, “like analyzing gold, scorching, cutting and rubbing it to test its purity.” For this form of doubt really exposes us to the truth if we follow it to the end, but we have neither the insight, the courage, nor the training. We have been schooled in a sterile addiction to contradiction that has robbed us repeatedly of all real openness to any more expansive and ennobling truth.</em>
+&gt; 
+&gt; <em>In the place of our contemporary nihilistic form of doubt I would ask you to put what I call a “noble doubt,” the kind that is an integral part of the path toward enlightenment. The vast truth of the mystical teachings handed down to us is not something that our endangered world can afford to dismiss. Instead of doubting them, why don’t we doubt ourselves: our ignorance, our assumption that we understand everything already, our grasping and evasion, our passion for so-called explanations of reality that have about them nothing of the awe-inspiring and all-encompassing wisdom of what the masters, the messengers of Reality, have told us?</em></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
